@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.skills-section-mobile {
+  display: none;
+}
+.active {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 576px) {
+  .skills-section-mobile {
+    display: block;
+  }
+}

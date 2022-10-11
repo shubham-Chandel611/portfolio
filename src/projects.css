@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@font-face {
+  font-family: Augestina;
+  src: url(/src/images/Agustina\ Demo.ttf);
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 400px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 20px 0;
+  background-color: #b5deff;
+  text-align: center;
+  flex: 1;
+  transition: all 400ms ease-in-out;
+}
+.project a {
+  text-decoration: none;
+  color: white;
+}
+.project:hover {
+  transform: rotate(5deg);
+}
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.project-image {
+  max-width: 300px;
+  border-radius: 5px;
+}
+.project-video {
+  max-width: 200px;
+}
+.project-button img {
+  max-width: 40px;
+}
+
+.project-info {
+  margin-top: -70px;
+  font-family: "Noto Sans", sans-serif;
+  max-width: 300px;
+}
+.link-btn {
+  display: flex;
+  align-self: flex-start;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.project-button {
+  width: 90px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(71, 70, 70);
+  box-shadow: 0 10px 15px -3px rgba(116, 83, 83, 0.1);
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.project-button a {
+  color: white;
+  text-decoration: none;
+}
+.project-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(129, 83, 83, 0.3);
+}
+.github {
+  background-color: white;
+}
+
+.project-section {
+  max-width: 90%;
+  margin: 150px auto;
+  opacity: 0;
+}
+.project-section-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* flex: 1; */
+}
+
+.activeproject {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: slide-in-projects;
+}
+
+@keyframes slide-in-projects {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 50px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.project-section-heading {
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .project-section-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project-section {
+    margin: 50px auto;
+  }
+}

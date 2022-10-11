@@ -1,0 +1,24 @@
+// Footer
+.footer {
+  width: 100vw;
+  background: black;
+  height: 300px !important;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer .name {
+  font-family: "Augestina";
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
